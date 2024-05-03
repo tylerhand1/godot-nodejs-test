@@ -12,7 +12,7 @@ func _ready():
 	add_child(http_request)
 	http_request.connect("request_completed", self, "_http_request_completed")
 	
-	var error = http_request.request("http://localhost:8080/")
+	var error = http_request.request("https://godot-nodejs-test.onrender.com/")
 	if error != OK:
 		push_error("An error occurred in the HTTP request")
 
