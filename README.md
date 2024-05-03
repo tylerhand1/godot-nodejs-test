@@ -1,6 +1,7 @@
 # Godot Node.js Integration Test
 This is a test project to see how to use a Godot HTTPRequest with an Express server on the Node.js runtime environment.
-
+## The project is live without a deployed backend currently
+The site is built with GitHub Pages and can be accessed [here](https://tylerhand1.github.io/godot-nodejs-test/)
 ## Project Structure
 The project is composed of two main directories: server and client.
 ### Server
