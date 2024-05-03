@@ -5,10 +5,10 @@ var label
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	label = get_parent().get_node("Label")
-	
+	label.text = "Awaiting response"
 	var http_request = HTTPRequest.new()
-	# set a timeout of 1 second
-	http_request.set_timeout(1.0)
+	# set a timeout of 5 seconds
+	http_request.set_timeout(5.0)
 	add_child(http_request)
 	http_request.connect("request_completed", self, "_http_request_completed")
 	
