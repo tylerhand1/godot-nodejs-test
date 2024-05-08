@@ -10,7 +10,8 @@ The server contains an index.js file that uses the Express json parser middlewar
 ### Client
 The client contains the Godot project that has an HTTPRequest GDScript file. In this script, it creates an HTTP request object, requests on the server, and if there is no error, parse the json response and print the response.
 ## How to install server and run locally
+### In the project directory, execute the following
  ```
-$ cd server && npm install && npm start
+cd server && npm install && npm start
  ```
 In client/src/scripts/TestHTTPRequest.gd, changes request url from "https://godot-nodejs-test.onrender.com/" to "http://localhost:8080"
